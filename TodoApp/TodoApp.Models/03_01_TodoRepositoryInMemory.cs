@@ -3,11 +3,11 @@ using System.Linq;
 
 namespace TodoApp.Models
 {
-    public class TodoRepository : ITodoRepository
+    public class TodoRepositoryInMemory : ITodoRepository
     {
         private static List<Todo> _todos = new List<Todo>();
 
-        public TodoRepository()
+        public TodoRepositoryInMemory()
         {
             _todos = new List<Todo>
             {
